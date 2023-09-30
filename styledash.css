@@ -403,7 +403,7 @@ textarea {
 }
 
 .task-assigned-employee {
-  display: flex;
+  display: none;
   width: 30%;
 }
 .task-issued-date {

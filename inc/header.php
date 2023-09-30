@@ -150,48 +150,76 @@ if (isset($_POST['logout'])) {
 
       <!-- ***********************************************Manager************************************************** -->
     <?php elseif ($_SESSION['role'] == 2) : ?>
+
+
       <li>
         <a href="dashboard.php">
-          <img class="dashlogo" src="images/icon/dashboard.png" alt="" />
-          <span class="nav-item">DASHBOARD</span>
-        </a>
-      </li>
-      <!-- creating TASKS -->
-      <li>
-        <a href="createtask.php" onclick="createTask()">
-          <img class="dashlogo" src="images/icon/create.png" alt="" />
-          <span class="nav-item">CREATE TASKS</span>
+          <div class="link-list">
+            <div> <img class="dashlogo" src="images/icon/dashboard.png" alt="" /></div>
+            <div> <span>Dashboard</span></div>
+
+          </div>
         </a>
       </li>
 
-      <!-- view TASKS -->
+
+
+
       <li>
         <a href="viewtaskadmin.php">
-          <img class="dashlogo" src="images/icon/prioritize1.png" alt="" />
-          <span class="nav-item">view TASKS</span>
+          <div class="link-list">
+            <div>
+              <img class="dashlogo" src="images/icon/prioritize1.png" alt="" />
+            </div>
+            <div>
+              <span class="nav-item">view TASKS</span>
+            </div>
+          </div>
         </a>
       </li>
+
+
+
       <li>
         <a href="listuser.php" onclick="">
-          <img class="dashlogo" src="images/icon/shortlist.png" alt="" />
-          <span class="nav-item">list-Users</span>
+          <div class="link-list">
+            <div>
+              <img class="dashlogo" src="images/icon/shortlist.png" alt="" />
+            </div>
+            <div>
+              <span class="nav-item">list-Users</span>
+            </div>
+          </div>
         </a>
       </li>
+
       <li>
         <a href="notice.php" onclick="">
-          <img class="dashlogo" src="images/icon/leave.png" alt="" />
-          <span class="nav-item">Notice</span>
+          <div class="link-list">
+            <div>
+              <img class="dashlogo" src="images/icon/leave.png" alt="" />
+            </div>
+            <div>
+              <span class="nav-item">Notes</span>
+            </div>
+          </div>
         </a>
       </li>
 
 
       <li>
         <a href="sendnotice.php" onclick="">
-          <img class="dashlogo" src="images/icon/note.png" alt="" />
-          <span class="nav-item">Send Notes</span>
+          <div class="link-list">
+            <div>
+              <img class="dashlogo" src="images/icon/note.png" alt="" />
+            </div>
+            <div>
+
+              <span class="nav-item">Send Notes</span>
+            </div>
+          </div>
         </a>
       </li>
-
 
       <!-- *****************************Staff******************************************************** -->
     <?php elseif ($_SESSION['role'] == 3) : ?>

@@ -98,7 +98,7 @@ mysqli_free_result($result);
                 </div>
 
                 <div class="task-right">
-                  <div class="task-assigned-employee"><img src="images/icon/user-logo.png" alt="logo" width="30"> <span>
+                  <div class="task-assigned-employee "><img src="images/icon/user-logo.png" alt="logo" width="30"> <span>
                       <?php echo $task["user_id"]; ?></span> </div>
 
                   <?php
