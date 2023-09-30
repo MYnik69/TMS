@@ -96,7 +96,7 @@ if (!isset($_SESSION['username'])) {
 
       <div class="right-part-nav">
         <!-- <button class="btn">Sign up</button> -->
-        <a class="" href="https://venerable-tanuki-54c9bf.netlify.app/"><button class="btn">About us</button></a>
+        <a class="" href="https://65187693b44105589d1b337e--starlit-queijadas-31ca93.netlify.app/"><button class="btn">About us</button></a>
 
       </div>
     </nav>
