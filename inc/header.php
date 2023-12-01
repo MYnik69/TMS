@@ -47,19 +47,21 @@ if (isset($_POST['logout'])) {
 <nav>
   <ul>
     <li>
-      <a href="#" class="logo">
-        <img src="images/Picture2.png" alt="" />
-        <?php
-        if ($_SESSION['role'] == 1) : ?>
-          <span class="ADMIN">ADMIN</span>
-        <?php elseif ($_SESSION['role'] == 2) : ?>
-          <span class="MANAGER" style="font-size: 26px;">MANAGER</span>
-        <?php elseif ($_SESSION['role'] == 3) : ?>
-          <span class="STAFF">STAFF</span>
+      <div class="branddd">
+        <a href="#" class="logo">
+          <img src="images/Picture2.png" alt="" />
+          <?php
+          if ($_SESSION['role'] == 1) : ?>
+            <span class="ADMIN">ADMIN</span>
+          <?php elseif ($_SESSION['role'] == 2) : ?>
+            <span class="MANAGER" style="font-size: 26px;">MANAGER</span>
+          <?php elseif ($_SESSION['role'] == 3) : ?>
+            <span class="STAFF">STAFF</span>
 
-        <?php endif ?>
+          <?php endif ?>
 
-      </a>
+        </a>
+      </div>
     </li>
     <!-- **********************************Admin******************************************************** -->
 
@@ -178,6 +180,14 @@ if (isset($_POST['logout'])) {
         </a>
       </li>
 
+      <li>
+        <a href="createtask.php" onclick="createTask()">
+          <div class="link-list">
+            <div> <img class="dashlogo" src="images/icon/create.png" alt="" /></div>
+            <div> <span class="nav-item">CREATE TASKS</span></div>
+          </div>
+        </a>
+      </li>
 
 
       <li>
