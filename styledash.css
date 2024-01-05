@@ -23,10 +23,10 @@ html {
 }
 
 :root {
-  --navbar: #48466d;
+  --navbar: #eee9da;
   --dashboard: #3d84a8;
   --forms: #46cdcf;
-  --dashboard-cards: #abedd8;
+  --dashboard-cards: #eee9da;
   --note-card: #caffbf;
   --inputcolor: var(--dashboard);
   --anchortag: #fff; /*ffcf70 */
