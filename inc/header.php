@@ -45,7 +45,7 @@ if (isset($_POST['logout'])) {
 
 
 <nav>
-  <ul>
+  <ul class="navitemm">
     <li>
       <div class="branddd">
         <a href="#" class="logo">

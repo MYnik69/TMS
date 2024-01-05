@@ -34,7 +34,7 @@ swiper-container {
   padding: 0;
   z-index: 1;
   display: block;
-  /* border-radius: 25px; */
+
   height: 209px;
   background-color: var(--forms);
 }
@@ -43,6 +43,7 @@ swiper-container {
   .card:hover {
     transition: transform 0.5s ease;
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   }
 }
 

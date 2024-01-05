@@ -20,9 +20,8 @@ if (isset($_POST['logout'])) {
 }
 
 ?>
-<header>
+<header class="headerr">
   <label>USER: <?php echo  $_SESSION['username'] ?></label>
-
 </header>
 
 <nav>

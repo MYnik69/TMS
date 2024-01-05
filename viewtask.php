@@ -133,7 +133,7 @@ mysqli_free_result($result);
                       <!-- <button class="btn-primary">Accept task</button> -->
                       <form method="post" action="modifytask.php">
                         <input name="userid" type="hidden" value="<?= $task["task_id"] ?>">
-                        <input class="btn-primary" type="submit" value="Done" id="" name="done">
+                        <input class="btn-primary" type="submit" value="Done" id="" name="done  ">
                       </form>
                     </div>
                   <?php else : ?>
@@ -204,7 +204,7 @@ mysqli_free_result($result);
     var now = new Date();
     // console.log(now);
     for (var i = 0; i < remainingTimeELements.length; i++) {
-      // line 86 for refernce <!-- For example, a data-abc-def attribute corresponds to dataset.abcDef -->
+
       var startDate = new Date(remainingTimeELements[i].dataset.startDate);
 
       var endDate = new Date(remainingTimeELements[i].dataset.endDate);

@@ -23,10 +23,10 @@ html {
 }
 
 :root {
-  --navbar: #eee9da;
-  --dashboard: #3d84a8;
-  --forms: #46cdcf;
-  --dashboard-cards: #eee9da;
+  --navbar: #200e3a;
+  --dashboard: #38419d;
+  --forms: #3887be;
+  --dashboard-cards: #52d3d8;
   --note-card: #caffbf;
   --inputcolor: var(--dashboard);
   --anchortag: #fff; /*ffcf70 */
@@ -36,7 +36,6 @@ html {
   --priority_low: #fff8dc;
   --priority_all: #ffffff;
   --task_description: #862b0d;
-
   --table_header: #b5c99a;
   --formlabel: #a78295;
 }
@@ -76,17 +75,18 @@ nav {
 }
 
 li {
-  text-align: left;
-
   padding: 15px;
 }
 
-ul {
+.navitemm {
   list-style: none;
-  width: auto;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: center;
+}
+
+.headerr {
+  left: 0;
 }
 
 .logo {
@@ -691,7 +691,7 @@ textarea {
   font-size: 15px;
   line-height: 1.5;
   text-align: justify;
-  color: #798e94;
+  color: black;
 }
 
 .slide-container {
@@ -776,6 +776,15 @@ textarea {
   background-color: var(--dashboard-cards);
   border-radius: 12px;
   margin-right: 20px;
+  box-shadow: #001c30;
+  border: 4px solid #ffff;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 25px;
+}
+.total:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add a dark shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .total-card {
@@ -858,6 +867,7 @@ h1 {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
+  width: 130px;
   border: none;
   border-radius: 12px;
   transition: background-color 0.3s ease;
