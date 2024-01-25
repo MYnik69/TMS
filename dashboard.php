@@ -10,13 +10,13 @@ $queryincompletetask = "SELECT COUNT(*) As incompletetask FROM tasks WHERE statu
 $resultincompletetask = mysqli_query($conn, $queryincompletetask);
 $rowincompletetask = mysqli_fetch_array($resultincompletetask);
 $totalincompletetask = $rowincompletetask['incompletetask'];
-// echo $rowincompletetask;
+
 
 $querycompletetask = "SELECT COUNT(*) AS completedtask FROM tasks WHERE status = 'completed'";
 $resultcompletetask = mysqli_query($conn, $querycompletetask);
 $rowcompletetask = mysqli_fetch_array($resultcompletetask);
 $totalcompletetask = $rowcompletetask['completedtask'];
-// echo $rowincompletetask;
+
 
 
 
